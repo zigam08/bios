@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Šolska spletna stran o BIOS-u, nastavitvah, UEFI in nadgradnjah.">
+  <title>Multimedija | BIOS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">BIOS</a>
+    <button class="menu-toggle" aria-label="Odpri meni">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Domov</a>
+      <a href="kaj-je-bios.html">Kaj je BIOS?</a>
+      <a href="nastavitve.html">Nastavitve</a>
+      <a href="nadgradnje.html">Nadgradnje</a>
+      <a href="multimedija.html" class="active">Multimedija</a>
+      <a href="kviz.html">Kviz</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="page-header"><p class="eyebrow">04 · MULTIMEDIJA</p><h1>Multimedija</h1></section>
+<section class="section">
+  <div class="media-grid">
+    <div class="pdf-container">
+        <iframe
+            src="predstavitev.pdf"
+            title="PowerPoint predstavitev"
+            class="pdf-viewer"
+            allowfullscreen>
+        </iframe>
+
+        <button class="fullscreen-btn"
+            onclick="odpriFullscreen(this)">
+            ⛶ Povečaj na celoten zaslon
+        </button>
+    </div>
+
+    <script>
+    function odpriFullscreen(gumb) {
+        const pdf = gumb.parentElement.querySelector("iframe");
+
+        if (pdf.requestFullscreen) {
+            pdf.requestFullscreen();
+        } else if (pdf.webkitRequestFullscreen) {
+            pdf.webkitRequestFullscreen();
+        }
+    }
+    </script>
+    <div class="video-placeholder">
+    <video controls width="100%">
+        <source src="video.mp4" type="video/mp4">
+        Tvoj brskalnik ne podpira predvajanja videa.
+    </video>
+</div>
+  </div>
+</section>
+</main>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

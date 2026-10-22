@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Šolska spletna stran o BIOS-u, nastavitvah, UEFI in nadgradnjah.">
+  <title>Kviz | BIOS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">BIOS</a>
+    <button class="menu-toggle" aria-label="Odpri meni">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Domov</a>
+      <a href="kaj-je-bios.html">Kaj je BIOS?</a>
+      <a href="nastavitve.html">Nastavitve</a>
+      <a href="nadgradnje.html">Nadgradnje</a>
+      <a href="multimedija.html">Multimedija</a>
+      <a href="kviz.html" class="active">Kviz</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="page-header quiz-header"><p class="eyebrow">05 · KVIZ</p><h1>Preizkusi svoje znanje</h1><p>12 vprašanj iz vseh treh gradiv. Pri vsakem vprašanju izberi en odgovor.</p></section>
+<section class="quiz-wrap">
+  <div class="quiz-top"><span id="progress">Vprašanje 1 / 12</span><span id="score-live">0 točk</span></div>
+  <div class="progress"><div id="progress-bar"></div></div>
+  <div id="quiz"></div>
+  <div class="quiz-actions"><button id="prev" class="btn secondary" disabled>Nazaj</button><button id="next" class="btn primary">Naprej</button></div>
+  <div id="result" class="result" hidden></div>
+  <button id="restart" class="btn primary" hidden>Poskusi znova</button>
+</section>
+<script>window.quizData = [{"q": "Kaj je BIOS in čemu je namenjen?", "a": ["BIOS je osnovni program, ki ob zagonu preveri strojno opremo in zažene računalnik.", "BIOS je program za brskanje po internetu.", "BIOS je program za pisanje dokumentov.", "BIOS je protivirusni program."], "correct": 0}, {"q": "Katere so glavne funkcije BIOS-a?", "a": ["Preverjanje strojne opreme, zagon računalnika in nalaganje operacijskega sistema.", "Urejanje fotografij in videoposnetkov.", "Brskanje po internetu.", "Ustvarjanje dokumentov."], "correct": 0}, {"q": "Kaj se zgodi, ko računalnik zaženemo in BIOS začne izvajati POST?", "a": ["BIOS preveri osnovne strojne komponente računalnika.", "BIOS namesti operacijski sistem.", "BIOS izbriše podatke na trdem disku.", "BIOS vzpostavi internetno povezavo."], "correct": 0}, {"q": "Kakšna je razlika med BIOS-om in operacijskim sistemom?", "a": ["BIOS preveri in zažene strojno opremo, operacijski sistem pa omogoča uporabo računalnika.", "BIOS je operacijski sistem.", "BIOS se uporablja samo za igranje iger.", "Operacijski sistem preverja samo tipkovnico."], "correct": 0}, {"q": "Zakaj nadgrajujemo BIOS/UEFI?", "a": ["Zaradi podpore novejši strojni opremi.", "Da povečamo velikost monitorja.", "Da izbrišemo operacijski sistem.", "Da zmanjšamo kapaciteto diska."], "correct": 0}, {"q": "Kje je najbolje prenesti novo različico BIOS-a/UEFI-ja?", "a": ["Z naključne spletne strani.", "Z uradne spletne strani proizvajalca.", "Iz družbenih omrežij.", "Iz katere koli spletne trgovine."], "correct": 1}, {"q": "Kaj se lahko zgodi, če med nadgradnjo BIOS-a prekinemo napajanje?", "a": ["Računalnik postane hitrejši.", "Poveča se količina RAM-a.", "BIOS/UEFI se lahko poškoduje in računalnik se ne zažene.", "Samodejno se namesti nov procesor."], "correct": 2}, {"q": "Kaj moramo preveriti pred nadgradnjo BIOS-a/UEFI-ja?", "a": ["Barvo računalnika.", "Velikost tipkovnice.", "Model matične plošče in ustrezno različico firmware-a.", "Proizvajalca monitorja."], "correct": 2}, {"q": "Kaj omogoča nastavitev prioritete zagonskih naprav?", "a": ["Določa vrstni red naprav, s katerih se računalnik poskuša zagnati.", "Poveča velikost RAM-a.", "Izbriše BIOS.", "Nastavi svetlost monitorja."], "correct": 0}, {"q": "Kaj lahko BIOS prikaže pri informacijah o delovanju sistema?", "a": ["Temperature, hitrost ventilatorjev in napetosti komponent.", "Samo zgodovino brskanja.", "Samo velikost dokumentov.", "Samo stanje tiskalnika."], "correct": 0}, {"q": "Kaj pomeni možnost »Exit Without Saving«?", "a": ["Zapre BIOS brez shranjevanja nastavitev.", "Shrani vse nastavitve.", "Ponastavi računalnik na tovarniške nastavitve.", "Nadgradi UEFI."], "correct": 0}, {"q": "Kaj se lahko po nadgradnji BIOS-a/UEFI-ja zgodi z nastavitvami?", "a": ["Nekatere nastavitve se lahko ponastavijo.", "Vse datoteke se samodejno izbrišejo.", "Monitor se trajno izklopi.", "RAM se odstrani iz računalnika."], "correct": 0}];</script>
+<script src="js/quiz.js"></script>
+</main>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
